@@ -65,7 +65,7 @@ jobs:
         run: java -jar ampint.jar project connection override import -i httpserver.json
 
       - name: Import project to LIVE
-          run: java -jar ampint.jar project import -i ${{env.AI_PROJECT_NAME}}.zip
+        run: java -jar ampint.jar project import -i ${{env.AI_PROJECT_NAME}}.zip
 
-        - name: Enable event
-          run: java -jar ampint.jar project event enable -n ${{env.AI_PROJECT_NAME}} -in ${{env.AI_INTEGRATION_NAME}} -cn "${{env.AI_DP_NAME}}"
+      - name: Enable event
+        run: java -jar ampint.jar project event enable -n ${{env.AI_PROJECT_NAME}} -in ${{env.AI_INTEGRATION_NAME}} -cn "${{env.AI_DP_NAME}}"
