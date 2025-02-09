@@ -36,4 +36,4 @@ DevOps Flow:
   * Can export project using the UI or using the CLI (e.g. `ampint project export -n LBclitest -pv V14`)
 * Developer pushes the updates to Github
 * Project check in triggers the Github action which promotes the project to LIVE, overrides the connection with LIVE (Production) credentials and enables the integration
-    ![Image](https://i.imgur.com/SHZeDjq.png)
+    ![Image](https://i.imgur.com/SHZeDjq.png) 
