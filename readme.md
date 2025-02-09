@@ -37,4 +37,3 @@ DevOps Flow:
 * Developer pushes the updates to Github
 * Project check in triggers the Github action which promotes the project to LIVE, overrides the connection with LIVE (Production) credentials and enables the integration
     ![Image](https://i.imgur.com/SHZeDjq.png)
-    
