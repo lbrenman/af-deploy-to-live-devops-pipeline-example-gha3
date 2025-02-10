@@ -1,4 +1,4 @@
-name: Promote Project to Live and Run
+name: Import Project to Live and Run
 
 # Controls when the workflow will run
 on: 

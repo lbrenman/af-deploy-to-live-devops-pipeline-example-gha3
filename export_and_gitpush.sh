@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# This script exports the specified version of the project "LBclitest" and checks the project export zipped and unzipped into Github
+# This will trigger a Github Action that will import the zip file into the LIVE environment and enable the integration, "flow1"
+# The project is in axway-appc-se.sandbox.ampint.axwaytest.net tenant
+# This script should be called as follows: `./export_and_gitpush.sh {{CLI USERNAME}} {{CLI PASSWORD}} {{CLI URL}} {{PROJECT VERSION WITH THE V}}`
+
 # Ensure four parameters are provided
 if [ "$#" -ne 4 ]; then
     echo "Usage: $0 <cli username> <cli password> <cli url> <version>"
