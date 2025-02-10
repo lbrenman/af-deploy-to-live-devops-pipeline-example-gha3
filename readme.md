@@ -1,6 +1,6 @@
 # Amplify Fusion Project Deployment Job DevOps Pipeline Example using GitHub Actions
 
-An example of how to use GitHub Actions and the [Amplify Fusion CLI](https://confluence.axway.com/display/DX/Amplify+Integration+CLI#AmplifyIntegrationCLI-Overrideconnection) to promote a project from DESIGN to LIVE using the CLI project export/import feature
+An example of how to use GitHub Actions and the [Amplify Fusion CLI](https://gist.github.com/lbrenman/bbccf548554fde48c7aa268256db7b96) to promote a project from DESIGN to LIVE using the CLI project export/import feature
 
 The DevOps flow is as follows:
 * Developer versions their project in the UI when ready to promote, runs the `export_and_gitpush.sh` script which will export the project version and unzip it and push it to the Github repo
