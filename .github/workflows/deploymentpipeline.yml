@@ -19,8 +19,6 @@ env:
   AI_DP_NAME: Shared Data Plane
   # Leave these empty
   PROJECT_VERSION:
-  DEPLOYJOBNAME:
-  PROJPROJVERSION:
   
 jobs:
   build:
@@ -43,6 +41,11 @@ jobs:
           echo "Extracted projectVersion: $PROJECT_VERSION"
           echo "PROJECT_VERSION=$PROJECT_VERSION" >> $GITHUB_ENV
       
+      - shell: bash
+        run: |
+          mv ${{env.AI_PROJECT_NAME}}/projects/${{env.AI_PROJECT_NAME}}/VERSION ${{env.AI_PROJECT_NAME}}/projects/${{env.AI_PROJECT_NAME}}/V${{env.PROJECT_VERSION}}
+          zip ${{env.AI_PROJECT_NAME} -o ${{env.AI_PROJECT_NAME}.zip
+
       - shell: bash
         run: |
           ls -al
