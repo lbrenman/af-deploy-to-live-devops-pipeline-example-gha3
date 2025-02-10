@@ -55,7 +55,8 @@ git add .
 git commit -m "Update to $VERSION"
 git push -u origin master
 
-# Remove CLI
+# Remove CLI and project zip
 rm "ampint.jar"
+rm "$PROJECT_NAME.zip"
 
 echo "Project $PROJECT_NAME version $VERSION has been successfully exported and organized and checked into Github."
