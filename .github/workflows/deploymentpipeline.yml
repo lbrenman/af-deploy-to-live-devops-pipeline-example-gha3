@@ -36,10 +36,10 @@ jobs:
       - name: Install jq
         run: sudo apt-get install -y jq
 
-      - name: Read and parse JSON file
+      - name: Read and parse metadata.json file
         id: parse_json
         run: |
-          PROJECT_VERSION=$(jq -r '.projects[] | select(.projectName=="LBclitest") | .projectVersion | ltrimstr("V")' LBclitest/metadata.json)
+          PROJECT_VERSION=$(jq -r '.projects[] | select(.projectName=="${{env.AI_PROJECT_NAME}}") | .projectVersion | ltrimstr("V")' ${{env.AI_PROJECT_NAME}}/metadata.json)
           echo "Extracted projectVersion: $PROJECT_VERSION"
           echo "PROJECT_VERSION=$PROJECT_VERSION" >> $GITHUB_ENV
       
