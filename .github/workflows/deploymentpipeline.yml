@@ -44,7 +44,7 @@ jobs:
       - shell: bash
         run: |
           mv ${{env.AI_PROJECT_NAME}}/projects/${{env.AI_PROJECT_NAME}}/VERSION ${{env.AI_PROJECT_NAME}}/projects/${{env.AI_PROJECT_NAME}}/V${{env.PROJECT_VERSION}}
-          zip ${{env.AI_PROJECT_NAME}} -o ${{env.AI_PROJECT_NAME}}.zip
+          zip ${{env.AI_PROJECT_NAME}}
 
       - shell: bash
         run: |
