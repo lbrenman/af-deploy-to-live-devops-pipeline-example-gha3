@@ -44,9 +44,6 @@ jobs:
       - shell: bash
         run: |
           mv ${{env.AI_PROJECT_NAME}}/projects/${{env.AI_PROJECT_NAME}}/VERSION ${{env.AI_PROJECT_NAME}}/projects/${{env.AI_PROJECT_NAME}}/V${{env.PROJECT_VERSION}}
-          zip -r ${{env.AI_PROJECT_NAME}}.zip ${{env.AI_PROJECT_NAME}}
-          ls -R
-          cat ${{env.AI_PROJECT_NAME}}/metadata.json
 
       - shell: bash
         run: |
@@ -70,7 +67,6 @@ jobs:
         run: java -jar ampint.jar project connection override import -i httpserver.json
 
       - name: Import project to LIVE
-        #run: java -jar ampint.jar project import -i ${{env.AI_PROJECT_NAME}}.zip
         run: java -jar ampint.jar project import -d ./${{env.AI_PROJECT_NAME}}
 
       - name: Enable event
