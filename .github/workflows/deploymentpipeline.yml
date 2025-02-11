@@ -59,6 +59,7 @@ jobs:
 
       - name: Disable event
         run: java -jar ampint.jar project event disable -n ${{env.AI_PROJECT_NAME}} -in ${{env.AI_INTEGRATION_NAME}} -cn "${{env.AI_DP_NAME}}"
+        continue-on-error: true 
 
       - name: Override Connection in LIVE
         env:
