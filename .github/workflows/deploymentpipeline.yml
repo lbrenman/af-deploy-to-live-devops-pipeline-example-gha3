@@ -13,7 +13,7 @@ on:
 
 env:
   # Set these accordingly
-  AI_TENANT_URL: https://axway-appc-se.sandbox.ampint.axwaytest.net
+  AI_TENANT_URL: https://axway.sandbox.ampint.axwaytest.net
   AI_PROJECT_NAME: LBclitest
   AI_INTEGRATION_NAME: flow1
   AI_DP_NAME: Shared Data Plane

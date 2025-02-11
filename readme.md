@@ -4,7 +4,7 @@ An example of how to use GitHub Actions and the [Amplify Fusion CLI](https://gis
 
 The DevOps flow is as follows:
 * Developer versions their project in the UI when ready to promote, runs the `export_and_gitpush.sh` script which will export the project version and unzip it and push it to the Github repo
-* The project check in in Github triggers the Github action which promotes the project to LIVE, overrides the connection with LIVE (Production) credentials and enables the integration
+* The project check in in Github triggers the Github action which promotes the project to LIVE in a different tenant, overrides the connection with LIVE (Production) credentials and enables the integration
 * The following diagram illustrates this flow:
   ![Image](https://i.imgur.com/1Cc6Na5.png)
 
