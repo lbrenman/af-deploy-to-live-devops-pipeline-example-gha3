@@ -8,13 +8,14 @@
         "active": true,
         "client": {},
         "details": {
-            "port": 0,
+            "port": "9443",
             "httpVersion": "HTTP_2",
             "sslPublicCertificate": {}
         },
         "partners": [
             {}
         ],
+        "protocol": "HTTPS",
         "direction": "INCOMING",
         "description": "http server",
         "authentication": {

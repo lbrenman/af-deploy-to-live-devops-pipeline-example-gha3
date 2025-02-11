@@ -7,7 +7,6 @@ The DevOps flow is as follows:
 * The project check in in Github triggers the Github action which promotes the project to LIVE in a different tenant, overrides the connection with LIVE (Production) credentials and enables the integration
 * The following diagram illustrates this flow:
   ![Image](https://i.imgur.com/1Cc6Na5.png)
-  
 
 A demo video can be found [here]()
 
