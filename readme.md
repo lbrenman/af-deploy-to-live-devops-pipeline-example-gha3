@@ -33,7 +33,7 @@ Preparation:
   ![Image](https://i.imgur.com/9RY1wjA.png)
 * Your project folder should contain the following:
   * Your project export. You can use the `export_and_gitpush.sh` script to handle the export and Github push
-  * A json file with the connection(s) export (e.g. `ampint project connection override get -n LBclitest -cn "http server" > httpserver.json`)
+  * A json file with the connection(s) export from the target tenant (e.g. `ampint project connection override get -n LBclitest -cn "http server" > httpserver.json`)
     * Replace the credentials in the connection export with environment variables as we assign github secrets to these env variables in the pipeline
       ![Image](https://i.imgur.com/Q6f5LcS.png)
   * The Github action contained in `.github/workflows/deploymentpipeline.yml`. It will run and promote the project to LIVE whenever you check your project in (Push Origin)
